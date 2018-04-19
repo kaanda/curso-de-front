@@ -1,0 +1,48 @@
+.menu-globo {
+    width: 100%;
+    height: 40px;
+    background-color #F3F3F3;
+}
+
+.menu-globo ul {
+    float: left;
+}
+
+.menu-globo ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+
+}
+
+.menu-globo ul li a:hover {
+    color: gray;
+}
+
+.menu-globo ul li {
+    float: left;
+    list-style: none;
+    margin: 10px 0px 0px 15px;
+}
+
+.menu-g1 {
+    width: 100%;
+    height: 80px;
+    background-color: #C4170C;
+
+}
+
+.menu-g1 #logo-g1 {
+    color: white;
+    width: 60px;
+    position: absolute;
+    left: 45%;
+    margin: 20px 0px 0px 0px;
+}
+
+.content-g1 {
+    width: 100%;
+    background-color: white;
+
+}
