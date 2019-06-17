@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <title>Primeira página WEB - Typescript</title>
+    <style>
+        .separator {
+            margin: 30px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h1 class="text-center">Agendador de Eventos</h1>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3>Adicionar Evento</h3>
+                <div class="alert alert-success" role="alert">
+                    Evento adicionado com sucesso!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Ocorreu um problema ao adicionar o evento.
+                </div>
+                <form id="form-adicionar-evento">
+                    <div class="form-group">
+                        <label for="">Título do Evento:</label>
+                        <input type="text" name="titulo_do_evento" id="titulo_do_evento" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Horário do Evento:</label>
+                        <input type="text" name="horario_do_show" id="horario_do_evento" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-dark" type="submit" id="btn-submit">
+                            Adicionar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row separator"></div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Título do Evento</th>
+                        <th>Horário do Evento</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-de-eventos"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./build/bundle.js"></script>
+    </div>
+</body>
+
+</html>
